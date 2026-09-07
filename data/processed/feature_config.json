@@ -1,0 +1,71 @@
+{
+    "base_features": [
+        "campaign_objective",
+        "platform",
+        "ad_placement",
+        "device_type",
+        "operating_system",
+        "creative_format",
+        "creative_size",
+        "ad_copy_length",
+        "has_call_to_action",
+        "creative_emotion",
+        "creative_age_days",
+        "target_audience_age",
+        "target_audience_gender",
+        "audience_interest_category",
+        "income_bracket",
+        "purchase_intent_score",
+        "retargeting_flag",
+        "quarter",
+        "day_of_week",
+        "hour_of_day",
+        "campaign_day",
+        "quality_score",
+        "industry_vertical",
+        "budget_tier",
+        "start_year",
+        "start_month",
+        "start_day",
+        "start_week",
+        "creative_to_campaign_age_ratio"
+    ],
+    "categorical_features": [
+        "campaign_objective",
+        "platform",
+        "ad_placement",
+        "device_type",
+        "operating_system",
+        "creative_format",
+        "creative_size",
+        "ad_copy_length",
+        "creative_emotion",
+        "target_audience_age",
+        "target_audience_gender",
+        "audience_interest_category",
+        "income_bracket",
+        "purchase_intent_score",
+        "day_of_week",
+        "industry_vertical",
+        "budget_tier"
+    ],
+    "numerical_features": [
+        "creative_age_days",
+        "quarter",
+        "hour_of_day",
+        "campaign_day",
+        "quality_score",
+        "start_week",
+        "creative_to_campaign_age_ratio"
+    ],
+    "boolean_features": [
+        "has_call_to_action",
+        "retargeting_flag"
+    ],
+    "target_variables": [
+        "CTR",
+        "conversion_rate",
+        "ROAS",
+        "profit"
+    ]
+}

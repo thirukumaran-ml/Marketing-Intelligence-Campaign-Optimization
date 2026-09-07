@@ -1,0 +1,53 @@
+{
+    "model": "HistGradient Boosting",
+    "target": "profit",
+    "target_type": "binary_classification",
+    "classes": {
+        "0": "Loss-making",
+        "1": "Profitable"
+    },
+    "features": [
+        "campaign_objective",
+        "platform",
+        "device_type",
+        "creative_format",
+        "ad_copy_length",
+        "income_bracket",
+        "purchase_intent_score",
+        "day_of_week",
+        "industry_vertical",
+        "has_call_to_action",
+        "retargeting_flag",
+        "quarter",
+        "campaign_day",
+        "quality_score",
+        "ad_spend"
+    ],
+    "categorical_features": [
+        "campaign_objective",
+        "platform",
+        "device_type",
+        "creative_format",
+        "ad_copy_length",
+        "income_bracket",
+        "purchase_intent_score",
+        "day_of_week",
+        "industry_vertical"
+    ],
+    "numerical_features": [
+        "has_call_to_action",
+        "retargeting_flag",
+        "quarter",
+        "campaign_day",
+        "quality_score",
+        "ad_spend"
+    ],
+    "test_size": 0.2,
+    "random_state": 42,
+    "classification_threshold": 0.5,
+    "accuracy": 0.8755,
+    "precision": 0.8926654740608229,
+    "recall": 0.9559386973180076,
+    "f1_score": 0.9232192414431082,
+    "roc_auc": 0.9230435345563265
+}

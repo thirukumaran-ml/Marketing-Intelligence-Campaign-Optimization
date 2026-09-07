@@ -1,0 +1,57 @@
+{
+    "model_type": "HistGradientBoostingRegressor",
+    "loss": "poisson",
+    "target": "revenue",
+    "features": [
+        "campaign_objective",
+        "platform",
+        "device_type",
+        "creative_format",
+        "ad_copy_length",
+        "income_bracket",
+        "purchase_intent_score",
+        "day_of_week",
+        "industry_vertical",
+        "has_call_to_action",
+        "retargeting_flag",
+        "quarter",
+        "campaign_day",
+        "quality_score",
+        "ad_spend"
+    ],
+    "categorical_features": [
+        "campaign_objective",
+        "platform",
+        "device_type",
+        "creative_format",
+        "ad_copy_length",
+        "income_bracket",
+        "purchase_intent_score",
+        "day_of_week",
+        "industry_vertical"
+    ],
+    "numerical_features": [
+        "has_call_to_action",
+        "retargeting_flag",
+        "quarter",
+        "campaign_day",
+        "quality_score",
+        "ad_spend"
+    ],
+    "outlier_method": "IQR",
+    "revenue_upper_bound": 53001.2,
+    "metrics": {
+        "MAE": 4440.393293860052,
+        "RMSE": 7240.43304949771,
+        "R2": 0.6458669658411132
+    },
+    "best_parameters": {
+        "min_samples_leaf": 50,
+        "max_leaf_nodes": 20,
+        "max_iter": 200,
+        "max_depth": 10,
+        "learning_rate": 0.07,
+        "l2_regularization": 0.1
+    },
+    "ad_spend_assumption": "ad_spend is treated as planned/expected campaign spend available at prediction time"
+}

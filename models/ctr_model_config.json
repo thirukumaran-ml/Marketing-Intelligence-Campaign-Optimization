@@ -1,0 +1,57 @@
+{
+    "model_type": "HistGradientBoostingRegressor",
+    "target": "CTR",
+    "features": [
+        "campaign_objective",
+        "platform",
+        "device_type",
+        "creative_format",
+        "ad_copy_length",
+        "income_bracket",
+        "purchase_intent_score",
+        "day_of_week",
+        "industry_vertical",
+        "has_call_to_action",
+        "retargeting_flag",
+        "quarter",
+        "campaign_day",
+        "quality_score",
+        "ad_spend"
+    ],
+    "categorical_features": [
+        "campaign_objective",
+        "platform",
+        "device_type",
+        "creative_format",
+        "ad_copy_length",
+        "income_bracket",
+        "purchase_intent_score",
+        "day_of_week",
+        "industry_vertical"
+    ],
+    "numerical_features": [
+        "has_call_to_action",
+        "retargeting_flag",
+        "quarter",
+        "campaign_day",
+        "quality_score",
+        "ad_spend"
+    ],
+    "outlier_method": "IQR",
+    "lower_bound": -1.5958749999999997,
+    "upper_bound": 5.785124999999999,
+    "outliers_removed": 429,
+    "metrics": {
+        "MAE": 0.5412269250855313,
+        "RMSE": 0.7224390805234897,
+        "R2": 0.6500011108930099
+    },
+    "best_parameters": {
+        "l2_regularization": 0.5309345833171364,
+        "learning_rate": 0.0950788012688874,
+        "max_depth": 8,
+        "max_iter": 346,
+        "max_leaf_nodes": 13,
+        "min_samples_leaf": 20
+    }
+}

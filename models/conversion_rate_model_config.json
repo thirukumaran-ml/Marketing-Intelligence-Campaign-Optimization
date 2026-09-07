@@ -1,0 +1,50 @@
+{
+    "model_type": "HistGradientBoostingRegressor",
+    "target": "conversion_rate",
+    "features": [
+        "campaign_objective",
+        "platform",
+        "device_type",
+        "creative_format",
+        "ad_copy_length",
+        "income_bracket",
+        "purchase_intent_score",
+        "day_of_week",
+        "industry_vertical",
+        "has_call_to_action",
+        "retargeting_flag",
+        "quarter",
+        "campaign_day",
+        "quality_score",
+        "ad_spend"
+    ],
+    "categorical_features": [
+        "campaign_objective",
+        "platform",
+        "device_type",
+        "creative_format",
+        "ad_copy_length",
+        "income_bracket",
+        "purchase_intent_score",
+        "day_of_week",
+        "industry_vertical"
+    ],
+    "numerical_features": [
+        "has_call_to_action",
+        "retargeting_flag",
+        "quarter",
+        "campaign_day",
+        "quality_score",
+        "ad_spend"
+    ],
+    "outlier_method": "IQR",
+    "lower_bound": -4.227374999999999,
+    "upper_bound": 9.725624999999999,
+    "outliers_removed": 815,
+    "prediction_constraint": "Minimum prediction = 0",
+    "metrics": {
+        "MAE": 0.8299383096198589,
+        "RMSE": 1.164559481420353,
+        "R2": 0.7307905166650284
+    }
+}
